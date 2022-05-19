@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" blendMode="DIFFERENCE" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamelogin.TutorialController">
+   <children>
+      <TextArea blendMode="DARKEN" editable="false" layoutY="111.0" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" text="El juego es un ciclo de proteccion contra naves aliens&#10;donde se les tiene que disparar usando el SPACE&#10;y se mueve usando las teclas de izquierda y derecha.&#10;Al inicio se obtienen 3 escudos y 3 vidas con forme van &#10;recibiendo disparos se van perdiendo paulatinamente." wrapText="true" AnchorPane.bottomAnchor="267.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="111.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="34.0" layoutY="50.0" prefHeight="17.0" prefWidth="177.0" text="Movimiento de la Nave" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="84.0" prefHeight="17.0" prefWidth="95.0" text="Disparar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="228.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" text="&lt;-" />
+      <Button layoutX="271.0" layoutY="46.0" mnemonicParsing="false" text="-&gt;" />
+      <Button layoutX="208.0" layoutY="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="SPACE BAR" />
+      <ImageView layoutX="13.0" layoutY="243.0">
+         <image>
+            <Image url="@../space_invaders/imagenes/bigAlien.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="17.0" layoutY="314.0">
+         <image>
+            <Image url="@../space_invaders/imagenes/littleAlien.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="16.0" layoutY="279.0">
+         <image>
+            <Image url="@../space_invaders/imagenes/mediumAlien.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="256.0" prefHeight="17.0" prefWidth="177.0" text="+40 puntos" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="287.0" prefHeight="17.0" prefWidth="177.0" text="+20 puntos" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="319.0" prefHeight="17.0" prefWidth="177.0" text="+10 puntos" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="155.0" layoutY="259.0">
+         <image>
+            <Image url="@../space_invaders/imagenes/UFO.png" />
+         </image>
+         <effect>
+            <ColorAdjust contrast="1.0" hue="-1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <Label layoutX="155.0" layoutY="277.0" prefHeight="17.0" prefWidth="177.0" text="Entre 80 - 150 puntos " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#back_to_menu" prefHeight="25.0" prefWidth="78.0" text="Regresar" />
+   </children>
+</AnchorPane>
